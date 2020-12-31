@@ -1,4 +1,5 @@
 import Clases as C
+from uuid import uuid4
 
 if __name__ == "__main__":
 
@@ -7,26 +8,26 @@ if __name__ == "__main__":
     financiera_2 = C.Financiera("Banco de Talca", 100000000)
 
     # Se instancian 8 clientes
-    cliente_1 = C.Cliente("Wolverine", 500000)
-    cliente_2 = C.Cliente("Ciclope", 400000)
-    cliente_3 = C.Cliente("Snoopy", 300000)
-    cliente_4 = C.Cliente("Perro Chocolo", 600000)
-    cliente_5 = C.Cliente("Vaca Loca", 100000)
-    cliente_6 = C.Cliente("Perro Firulais", 200000)
-    cliente_7 = C.Cliente("Chupacabras", 100000)
-    cliente_8 = C.Cliente("Baby Yoda", 700000)
+    cliente_1 = C.Cliente("Wolverine", uuid.uuid4(), 500000)
+    cliente_2 = C.Cliente("Ciclope", uuid.uuid4(), 400000)
+    cliente_3 = C.Cliente("Snoopy", uuid.uuid4(), 300000)
+    cliente_4 = C.Cliente("Perro Chocolo", uuid.uuid4(), 600000)
+    cliente_5 = C.Cliente("Vaca Loca", uuid.uuid4(), 100000)
+    cliente_6 = C.Cliente("Perro Firulais", uuid.uuid4(),200000)
+    cliente_7 = C.Cliente("Chupacabras", uuid.uuid4(), 100000)
+    cliente_8 = C.Cliente("Baby Yoda", uuid.uuid4(), 700000)
 
     # Se agrupan clientes en listas de 4 unidades
-    clientes_grupo_a = [cliente_1, cliente_2, cliente_3, cliente_4]
-    clientes_grupo_b = [cliente_5, cliente_6, cliente_7, cliente_8]
+    cliente_grupo_A = [cliente_1, cliente_2, cliente_3, cliente_4]
+    cliente_grupo_B = [cliente_5, cliente_6, cliente_7, cliente_8]
 
     # Se dan de alta los clientes del grupo_a en financiera_1
-    for cliente in clientes_grupo_a:
-        financiera_1.agregar_cliente(cliente)
+    for cliente in cliente_grupo_A:
+        financiera_1.agregar_clientes(cliente)
 
     # Se dan de alta los clientes del grupo_b en financiera_2
-    for cliente in clientes_grupo_b:
-        financiera_2.agregar_cliente(cliente)
+    for cliente in cliente_grupo_B:
+        financiera_2.agregar_clientes(cliente)
 
     # Se imprime resumen de clientes (id parcial, saldo y nombre)
     # de financiera_1

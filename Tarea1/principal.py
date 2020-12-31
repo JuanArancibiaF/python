@@ -8,14 +8,14 @@ if __name__ == "__main__":
     financiera_2 = C.Financiera("Banco de Talca", 100000000)
 
     # Se instancian 8 clientes
-    cliente_1 = C.Cliente("Wolverine", uuid.uuid4(), 500000)
-    cliente_2 = C.Cliente("Ciclope", uuid.uuid4(), 400000)
-    cliente_3 = C.Cliente("Snoopy", uuid.uuid4(), 300000)
-    cliente_4 = C.Cliente("Perro Chocolo", uuid.uuid4(), 600000)
-    cliente_5 = C.Cliente("Vaca Loca", uuid.uuid4(), 100000)
-    cliente_6 = C.Cliente("Perro Firulais", uuid.uuid4(),200000)
-    cliente_7 = C.Cliente("Chupacabras", uuid.uuid4(), 100000)
-    cliente_8 = C.Cliente("Baby Yoda", uuid.uuid4(), 700000)
+    cliente_1 = C.Cliente("Wolverine", uuid4(), 500000)
+    cliente_2 = C.Cliente("Ciclope", uuid4(), 400000)
+    cliente_3 = C.Cliente("Snoopy", uuid4(), 300000)
+    cliente_4 = C.Cliente("Perro Chocolo", uuid4(), 600000)
+    cliente_5 = C.Cliente("Vaca Loca", uuid4(), 100000)
+    cliente_6 = C.Cliente("Perro Firulais", uuid4(),200000)
+    cliente_7 = C.Cliente("Chupacabras", uuid4(), 100000)
+    cliente_8 = C.Cliente("Baby Yoda", uuid4(), 700000)
 
     # Se agrupan clientes en listas de 4 unidades
     cliente_grupo_A = [cliente_1, cliente_2, cliente_3, cliente_4]

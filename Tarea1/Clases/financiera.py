@@ -3,7 +3,7 @@ from uuid import uuid4
 
 class Financiera:
 
-   def __init__(self, nombre, saldo_institucional):
+    def __init__(self, nombre, saldo_institucional):
         self.__id = uuid4()
         self.__nombre = nombre
         self.__saldo_institucional = saldo_institucional

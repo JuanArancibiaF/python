@@ -4,7 +4,7 @@ from uuid import uuid4
 class Cliente:
 
    # "self.__saldo" es Saldo Privado. En caso de error, cambiarlo a "self.saldo"
-   def __init__(self, nombre, saldo):
+    def __init__(self, nombre, saldo):
         self.__id = uuid4()
         self.__nombre = nombre
         # self.__saldo es para "saldo privado" de cada cliente.
